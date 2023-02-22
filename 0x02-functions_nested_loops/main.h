@@ -1,5 +1,8 @@
-#include "main.h"
+#ifndef "main.h"
+ #define "main.h"
 
 int _putchar (char c)
 
+#include <stdio.h>
 
+#endif

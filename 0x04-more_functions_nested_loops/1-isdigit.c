@@ -1,7 +1,8 @@
-#include <stdio.h>
+i#include <stdio.h>
 
 /**
- * _isdigit - checks whether given char is digit or not and uses 'c' as its int
+ * _isdigit - checks whether given char is digit or not
+ * @c: char to be checked
  *
  * Return: (1) if char is digit (0) if not
  */

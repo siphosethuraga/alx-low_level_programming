@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 
 /**
  * _isdigit - checks whether given char is digit or not
@@ -25,7 +25,7 @@ int main(void)
 {
 	char c = '7';
 
-	if (_isdigit(c))
+	if (_isdigit (c))
 	{
 		printf("%c is a digit.\n", c);
 	}

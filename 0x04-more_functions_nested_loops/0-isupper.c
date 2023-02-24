@@ -1,19 +1,17 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * _isupper -checks whether a char is an uppercase letter
+ * _isupper - uppercase letters
+ * @c: character to check
  *
- * @c: the charractor to check
- *
- * Return: (1) if c is an uppercase letter, or (0) otherwise.
+ * Return: 0 or 1
  */
+
+
 int _isupper(int c)
 {
 	if (c >= 'A' && c <= 'Z')
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * puts_half - print second half of a string
- * @str: char array string type
- * Description: If odd number of chars, print (length - 1) / 2
+ * main - check the code for ALX Program
+ *
+ * Return: Always 0.
  */
-
-void puts_half(char *str)
+int main(void)
 {
-	int i;
+	int array[6];
 
-	for (i = 0; str[i] != '\0'; i++)
-		;
-
-	i++;
-	for (i /= 2; str[i] != '\0'; i++)
-	{
-		_putchar(str[i]);
-
-	}
-	_putchar('\n');
+	array[0] = 98;
+	array[1] = 402;
+	array[2] = -198;
+	array[3] = 298;
+	array[4] = -1024;
+	array[5] = -200003;
+	print_array(array, 6);
+	return (0);
 }

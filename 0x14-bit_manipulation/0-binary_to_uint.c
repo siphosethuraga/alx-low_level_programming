@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stdlib.h>
 
-/*
- * binary_to_uint: biniary_to_unint  turns a binary number to an unsignef int
- * @b - is s pointer that stores the memory alolocated in 0 and 1
+/**
+ * binary_to_uint - converts binary number to unsigned int
+ * @b: is s pointer that stores the memory alolocated in 0 and 1
  *
  * Return: result
  */

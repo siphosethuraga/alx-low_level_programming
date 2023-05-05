@@ -1,16 +1,26 @@
-#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
 
 /**
- * listint_len - returns the number of elements in a linked listint_t list.
- * @h: pointer to the list.
- * Return: number of nodes.
- **/
-size_t listint_len(const listint_t *h)
+* print_listint - prints all the elements of a listint_t list
+* @h: is the pointer
+* num - the number of nodes
+* next - where the memry lies
+* Return: number of nodes
+*/
+
+size_t print_listint(const listint_t *h)
 {
-	size_t nodes = 0;
+	size_t count = 0;
 
 	while (h)
 	{
-		nodes++;
+		printf("%d\n", h->n);
 		h = h->next;
+		count++;
+
 	}
+
+	return (count);
+}

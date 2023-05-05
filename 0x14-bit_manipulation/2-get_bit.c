@@ -5,8 +5,7 @@
 /**
 * get_bit - returns value of bit
 * @n: unsigned int
-* @index- unsigned int index of bit
-*
+* @index - unsigned int of bit
 * Return: value of bit
 */
 

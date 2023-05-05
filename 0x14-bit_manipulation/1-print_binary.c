@@ -30,6 +30,6 @@ void print_binary(unsigned long int n)
 		filt = filt >> 1;
 	}
 
-	(if !prints)
+	if (!prints)
 		_putchar('0');
 }

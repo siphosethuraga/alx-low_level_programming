@@ -5,8 +5,8 @@
 
 /**
 * get_endianness - checks the endianness of ghe orog
-* ptr - pointer 
-* num - number 
+* ptr - pointer
+* num - number
 *
 * Return: 0 if it is a huge endiann 1 if not
 */
@@ -18,6 +18,6 @@ int get_endianness(void)
 
 	if (*ptr)
 		return (1);
-	else 
+	else
 		return (0);
 }

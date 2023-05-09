@@ -57,7 +57,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 int main(int argc, char **argv)
 {
-	ssize_t bytes_read;
+	ssize_t read_bytes;
 
 	if (argc != 2)
 	{
@@ -73,5 +73,5 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
-	returrn (0);
+	return (0);
 }

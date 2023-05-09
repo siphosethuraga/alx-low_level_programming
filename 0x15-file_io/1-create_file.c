@@ -5,7 +5,7 @@
 #include "main.h"
 
 /**
-* create_file - the prototyoe to creat file
+* create_file - the prototype to create file
 * @filename: it is the file name
 * @text_content:  it is the text content
 * fd - file descripter

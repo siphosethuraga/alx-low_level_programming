@@ -9,8 +9,6 @@
 * append_text_to_file - appends the text to the file
 * @filename: it is the general name of the file used
 * @text_content: text inside file
-* @fd: is the fike descripter
-* @len: it is the string length
 *
 * Return: 1 success 0 fail
 */

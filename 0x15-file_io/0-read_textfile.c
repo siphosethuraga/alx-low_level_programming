@@ -11,7 +11,7 @@
 * @read_bytes - reads bytes in the buffer
 * @write_bytes - writes the bytes in buffer
 *
-* return: readtextfile and returns to posix
+* Return: number of bytes read and printed, or 0 on failure
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(sizeof(char) *letters);
+	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
 
@@ -41,10 +41,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write_bytes= write(STDOUT_FILENO, buf, bytes_read);
-	if (write_bytes == -1 || bytes_written != bytes_read)
+	write_bytes = write(STDOUT_FILENO, buffer, bytes_read);
+	if (write_bytes == -1 || write_bytes != read_bytes)
 	{
-		free(buf);
+		free(buffer);
 		close(fd);
 		return (0);
 	}

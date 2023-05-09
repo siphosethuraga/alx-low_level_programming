@@ -41,7 +41,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write_bytes = write(STDOUT_FILENO, buffer, bytes_read);
+	write_bytes = write(STDOUT_FILENO, buffer, read_bytes);
 	if (write_bytes == -1 || write_bytes != read_bytes)
 	{
 		free(buffer);
@@ -53,4 +53,25 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	close(fd);
 
 	return (write_bytes);
+}
+
+int main(int argc, char **argv)
+{
+	ssize_t bytes_read;
+
+	if (argc != 2)
+	{
+		write(STDERR_FILENO, "Usage: ./read_textfile filename\n", 31);
+		return (1);
+
+	}
+
+	bytes_read = read_textfile(argv[1], 1024);
+	if (bytes_read == 0)
+	{
+		write(STDERR_FILENO, "Error: Can't read from file\n", 28);
+		return (1);
+	}
+
+	returrn (0);
 }

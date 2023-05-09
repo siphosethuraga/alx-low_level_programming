@@ -56,23 +56,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	return (write_bytes);
 }
 
-int main(int argc, char **argv)
-{
-	ssize_t read_bytes;
-
-	if (argc != 2)
-	{
-		write(STDERR_FILENO, "Usage: ./read_textfile filename\n", 31);
-		return (1);
-
-	}
-
-	bytes_read = read_textfile(argv[1], 1024);
-	if (bytes_read == 0)
-	{
-		write(STDERR_FILENO, "Error: Can't read from file\n", 28);
-		return (1);
-	}
-
-	return (0);
-}
